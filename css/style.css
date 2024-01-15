@@ -1,6 +1,403 @@
+/* This is Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --font_color_main: #131318;
+    --font_color_secnd: #424247;
+    --brand_color: #FF5400;
+    --font_color_white: #ffffff;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* Common CSS */
+.btn_btn_main {
+    background: var(--brand_color);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: var(--font_color_white);
+    font-size: 14px;
+}
+.section_header {
+    margin: 15px auto;
+    text-align: center;
+}
+.section_header h3 {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 10px;
+    color: var(--font_color_main);
+}
+.section_header p{
+    color: var(--font_color_secnd);
+    font-size: 14px;
+
+}
+
+/* Header Section CSS */
+.header{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.header .top_header {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .top_header h2 {
+    color: var(--font_color_main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+}
+.header .top_header img{
+    width: 50px;
+}
+.header .top_header .bar_icon{
+    display: none;
+}
+.header .top_header .nav > ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.nav > ul > li {
+    list-style: none;
+}
+.nav > ul > li > a{
+    text-decoration: none;
+    color: var(--font_color_secnd);
+}
+.nav > ul > li > a:hover{
+    color: var(--brand_color);
+}
+/* Banner CSS */
+.banner {
+    background-image: url("../img/group1311.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 15px;
+}
+.banner .banner_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #00000078;
+    color: var(--font_color_white);
+    border-radius: 15px;
+    text-align: center;
+    gap: 25px;
+    padding: 0px 15px;
+}
+.banner .banner_content h2{
+    font-size: 50px;
+}
+.banner .banner_content .search_form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.search_form input, .search_form button, .search_form select {
+    padding: 9px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #7b7b7b;
+}
+.btn_btn_primary{
+    background: var(--brand_color);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.btn_btn_primary i,
+.btn_btn_primary span
+{
+    color: var(--font_color_white);
+}
+/* Main Section Design */
+.main{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.our_populer_tur{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.our_populer_tur .popular_tur_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+.popular_tur_content h3{
+    color: var(--font_color_main);
+    font-size: 26px;
+    font-weight: 900;
+}
+.popular_tur_content p, .popular_tur_content li {
+    color: var(--font_color_secnd);
+}
+.our_populer_tur .popular_tur_content ul{
+    list-style-position: inside;
+}
+.our_populer_tur .popular_tur_img{
+    width: 50%;
+}
+.our_populer_tur .popular_tur_img img{
+    max-height: 400px;
+}
+
+.destiniton_img{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+.dest_img1{
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+}
+.dest_img2{
+    grid-column: 7 / -1;
+    grid-row: 1 / span 1;
+}
+.dest_img3{
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+.dest_img4{
+    grid-column: 5 / span 5;
+    grid-row: 2 / span 1;
+}
+.dest_img5{
+    grid-column: 10 / -1;
+    grid-row: 2 / span 1;
+}
+.dest_img6{
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+}
+.dest_img7{
+    grid-column: 5 / -1;
+    grid-row: 3 / span 1;
+}
+.why_chose_us img{
+    width: 40px;
+    height: 40px;
+}
+.why_chose_us .why_chose_top{
+    margin: 50px 0px;
+    display: flex;
+    gap: 50px;
+}
+.why_chose_us .why_chose_butom{
+    margin: 50px 0px;
+}
+.why_chose_us  h4{
+    font-size: 18px;
+    color: var(--font_color_main);
+    margin: 10px 0px;
+}
+.why_chose_us  p{
+    font-size: 16px;
+    color: var(--font_color_secnd);
+    margin: 10px 0px;
+}
+.why_chose_us .why_chose_top .hotel{
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.why_chose_us .why_chose_top .map{
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.why_chose_us .price {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+/* News latter CSS */
+.newsletter{
+    display: flex;
+}
+.newsletter .news_letter_form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 30px;
+    border: 1px solid var(--brand_color);
+    border-radius: 10px;
+    padding: 25px;
+}
+.newsletter .news_letter_form h4{
+    color: var(--font_color_main);
+    font-size: 20px;
+    font-family: 900;
+}
+.newsletter .news_letter_form p{
+    color: var(--font_color_secnd);
+    font-size: 14px;
+}
+.newsletter .news_letter_form input {
+    padding: 5px;
+    border: none;
+    background: #e1e1e1;
+    border-radius: 5px;
+    height: 40px;
+}
+.newsletter .new_letter_img{
+    width: 50%;
+}
+/* Footer Section */
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    margin: 50px auto 0px;
+    padding: 0px 15% 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer h2 {
+    color: var(--font_color_main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.footer img{
+    width: 50px;
+}
+.footer p{
+    color: var(--font_color_secnd);
+    font-size: 14px;
+}
+.footer .social{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Query For Small Device */
+@media screen and (max-width: 600px) {
+    .header .top_header h2 {
+        font-size: 14px;
+    }
+    .header .top_header img{
+        width: 30px;
+    }
+    .header .top_header .nav{
+        display: none;
+    }
+    .header .top_header .bar_icon{
+        display: block;
+    }
+    /* Banner Responsive */
+    .banner .banner_content .search_form {
+        flex-direction: column;
+    }
+    .search_form input, .search_form button, .search_form select {
+        width: 100%;
+    }
+    .banner .banner_content {
+        gap: 10px;
+        padding: 15px 15px;
+    }
+    .banner .banner_content h2 {
+        font-size: 18px;
+    }
+    .banner .banner_content p{
+        font-size: 10px;
+    }
+
+    .our_populer_tur {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .our_populer_tur .popular_tur_content {
+        width: 100%;
+    }
+    .section_header h3,
+    .popular_tur_content h3
+    {
+        font-size: 18px;
+    }
+    .section_header p {
+        font-size: 12px;
+    }
+    .our_populer_tur .popular_tur_img{
+        width: 100%;
+    }
+    .destiniton_img {
+        display: flex;
+        flex-direction: column;
+    }
+    .destiniton_img > div img {
+        height: 170px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .why_chose_us .why_chose_top{
+        flex-direction: column;
+    }
+    .why_chose_us .price {
+        width: 100%;
+    }
+    .newsletter {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .newsletter .news_letter_form {
+        width: 100%;
+    }
+    .newsletter .new_letter_img{
+        width: 100%;
+    }
+    .footer h2 {
+        font-size: 20px;
+    }
+    .footer h2 img{
+        width: 30px;
+    }
+    
+
+        
 }
