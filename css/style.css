@@ -338,8 +338,15 @@ img{
     margin-bottom: 50px;
     text-align: center;
 }
-
-
+.perfect_place_content > ul > li{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.perfect_place_vedio iframe {
+    border-radius: 26px;
+    padding: 10px;
+    width: 100%;
+}
 /* News latter CSS */
 .newsletter{
     display: flex;
