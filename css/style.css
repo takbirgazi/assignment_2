@@ -348,6 +348,28 @@ img{
     padding: 10px;
     width: 100%;
 }
+.extra {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 30px 0px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+.extra .service_card {
+    padding: 60px;
+    text-align: center;
+    background: #ff54003d;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+}
+.extra .service_card h2{
+    font-size: 26px;
+    color: var(--font_color_main);
+    margin-bottom: 10px;
+}
 /* News latter CSS */
 .newsletter{
     display: flex;
@@ -525,6 +547,10 @@ img{
     .card_content {
         width: 100%;
         margin-top: 250px;
+    }
+    .extra {
+        width: 100%;
+        flex-direction: column;
     }
         
 }
