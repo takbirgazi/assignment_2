@@ -127,12 +127,13 @@ img{
     outline: none;
     color: #7b7b7b;
 }
-.btn_btn_primary{
+.btn_btn_primary {
     background: var(--brand_color);
     display: flex;
     gap: 5px;
     align-items: center;
     cursor: pointer;
+    justify-content: center;
 }
 .btn_btn_primary i,
 .btn_btn_primary span
