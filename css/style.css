@@ -273,6 +273,73 @@ img{
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+.discount_card {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 50px 0px;
+}
+.dis_bacK_1{
+    background-image: url("../img/group39.png");
+    align-items: center;
+    justify-content: end;
+}
+.dis_bacK_2{
+    background-image: url("../img/group40.png");
+    align-items: center;
+    justify-content: start;
+}
+.dis_bacK_3{
+    background-image: url("../img/group39.png");
+    align-items: center;
+    justify-content: end;
+}
+.card_content {
+    padding: 25px;
+    background: #ffffffad;
+    color: #5A5A5D;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    gap: 10px;
+    border-radius: 15px;
+}
+.card_content .card_icon{
+    display: flex;
+    gap: 25px;
+}
+.card_content .card_icon span{
+    font-size: 10px;
+    font-weight: bold;
+}
+.card_content .card_icon span i{
+    color: var(--brand_color);
+    margin-right: 5px
+}
+.card_content h4{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--font_color_main);
+}
+.card_content P{
+    font-size: 14px;
+    color: var(--font_color_secnd);
+}
+.card_content > strong{
+    color: var(--brand_color);
+    font-weight: 900;
+}
+.dis_button {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
 /* News latter CSS */
 .newsletter{
     display: flex;
@@ -440,6 +507,16 @@ img{
     }
     .dest_img_cont {
         font-size: 20px;
+    }
+    .discount_card {
+        padding: 20px;
+        margin: 20px 0px;
+        align-items: end;
+        height: 450px;
+    }
+    .card_content {
+        width: 100%;
+        margin-top: 250px;
     }
         
 }
